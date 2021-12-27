@@ -1,0 +1,433 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    background: #3586ff;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;   
+}
+.clearflix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}.main-nav li{
+   display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100; 
+}
+.main-nav li a:hover{
+    border-bottom: 1px solid brown;
+}
+.sub-menu
+.main-nav li ul li{
+    display: none;
+    margin-bottom: 1px;
+}
+.main-nav li:hover ul li{
+    display: block; 
+}
+
+.sec{
+    align-items: center;
+    margin-top: 10px;
+    width: 250;
+    height: 300;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.sec1{
+    margin: 30px;
+}
+ .sec1 .sec2{
+    margin: 20px;
+    padding: 10px;
+}
+
+/*.main-coln-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: aqua;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#etc{
+    text-transform: lowercase;
+}
+.btn{
+    display: inline-block;
+    padding: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+    cursor: pointer;
+}
+.btn-full{
+    background-color: transparent;
+    color: yellow;
+    margin-right: 15px;
+    border: 1px solid aqua;       
+}
+.btn-full:hover{
+    background-color: navy;
+}
+.btn-half{
+    background-color: transparent;
+    color: yellow;
+    border: 1px solid brown;
+    
+}
+.btn-half:hover{
+    background-color: brown;
+}
+.colorchange{
+    animation: colorchangebanner 1s infinite;
+}
+.open{
+    align-self: flex-end;*/
+}
+@keyframes colorchangebanner{
+    0%{color: red;}
+    25%{color: yellow;}
+    50%{color: crimson;}
+    100%{color: blueviolet}
+}
+.icon{
+    display: none;
+}
+@media only screen and (max-width: 1180px){
+    .main-coln-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width: 768px)
+{
+    h1{font-size: 180%;}
+    
+    .main-nav{display: none}
+    .icon{
+        display: inline-block;
+        color: azure;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    } 
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+      display: block;
+        margin-top: 10px;
+    }
+    @media only screen and (max-width: 480px)
+        .btn-full{
+            margin-bottom:10px;
+    }
+  /*  h1{font-size: 160%;}*/
+}
+.fas{
+     size: 15px;
+     color: black;
+     margin-right: 2px;
+     
+}
+/*.butn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #e74c3c;
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+}*/
+#box{
+    width: 500px;
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px black;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    display:none;
+}
+#box h1{
+color: #333;
+    
+}
+.close{
+    font-size: 18PX;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #3498db;
+    display: inline-block;
+    border-radius: 4px;
+    
+}
+
+--------------------------------templets-css---------------------------------------------------
+
+/*.row type-menu{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    display: inline-block;
+    padding: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+.btn-menu1{
+    background-color: transparent;
+    color: yellow;
+    margin-right: 15px;
+    border: 1px solid aqua;       
+}
+.btn-menu1:hover{
+    background-color: navy;
+}
+
+.btn-menu2{
+    background-color: transparent;
+    color: yellow;
+    margin-right: 15px;
+    border: 1px solid aqua;       
+}
+.btn-menu2:hover{
+    background-color: navy;}
+.btn-menu3{
+    background-color: transparent;
+    color: yellow;
+    margin-right: 15px;
+    border: 1px solid aqua;       
+}
+.btn-menu3:hover{
+    background-color: navy;}
+.btn-menu4{
+    background-color: transparent;
+    color: yellow;
+    margin-right: 15px;
+    border: 1px solid aqua;       
+}
+.btn-menu4:hover{
+    background-color: navy;}
+.btn-menu5{
+    background-color: transparent;
+    color: yellow;
+    margin-right: 15px;
+    border: 1px solid aqua;       
+}
+.btn-menu5:hover{
+    background-color: navy;}
+.btn-menu6{
+    background-color: transparent;
+    color: yellow;
+    margin-right: 15px;
+    border: 1px solid aqua;       
+}
+.btn-menu6:hover{
+    background-color: navy;}
+
+table{
+    background-color: white;
+    margin-top: 1em;
+      border: 0px;
+     top: 50%;
+    left: 50%;
+    padding-top: 5%;
+    padding-left:5%;
+    padding-right: 5%;
+}
+tr{
+    /*background-color: aqua;
+    float: inherit;
+    
+}*/
+/*.sat1{
+    height: 250px;
+    width: 250px;
+    margin-right: 20px;
+    
+}
+.sat2{
+    height: 250px;
+    width: 250px;
+    
+}
+.sat3{
+    height: 250px;
+    width: 250px;
+    
+}
+.sat4{
+    height: 250px;
+    width: 250px;
+    
+}
+.sat5{
+    height: 250px;
+    width: 250px;
+    
+    }
+
+.sat6{
+    height: 250px;
+    width: 250px;
+    
+    }
+.sat7{
+    height: 250px;
+    width: 250px;
+    
+    }
+.sat8{
+    height: 250px;
+    width: 250px;
+    
+    }
+
+.sat9{
+    height: 250px;
+    width: 250px;
+    }
+.sat0{
+    height: 250px;
+    width: 250px;
+    
+    }
+.sat11{
+    height: 250px;
+    width: 250px;
+    
+    }
+.sat tr td li img:hover{
+    transform: scale(1.1);
+}*/
+/*section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+    overflow: hidden;
+}
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(images/wave.png);
+    background-size: 1000px 100px;
+}
+section .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0; 
+}
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10; 
+}
+section .wave.wave3{
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15; 
+}
+section .wave.wave4{
+    animation: animate 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20; 
+}
+@keyframes animate{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+@keyframes animate2{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}*/
+-------------------------------invitation-style-----------------------------------------------------
+img{
+    margin: 1em 0em 1em 0em;
+     background-color: white;
+    margin-top: 1em;
+      border: 0px;
+     margin-right: 50%;
+    margin-left: 36%;  

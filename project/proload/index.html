@@ -1,0 +1,121 @@
+ <html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <title>
+            radhe-creative
+        </title>
+       <link rel="stylesheet" href="styles.css">
+        
+      <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib...">
+        <style> 
+            
+            body{
+                background-image: url(sat23.jpg);
+                background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+            }
+        </style>
+    </head>
+    <body >
+        <header>
+            <nav>
+                <div class="row clearflix">
+                    <img src="skyline.jpg" alt="logo" class="logo"/>
+                    <ul class="main-nav animateslideInUp" id="check-class">
+                        <li><i class="fas fa-home"><a href="#">HOME</a></i></li>
+                        <li><i class="fas fa-images"></i><a href="#">CONTACT US</a>
+                       </li>
+                        <li><i class="fas fa-info-circle"></i><a href="#">ABOUT</a></li>
+                        <li><i class="fas fa-lock"><a href="#">SIGN OUT</a></i></li>
+                    </ul>
+                    <a href="#" class="icon" 
+                       onclick="slideshow()"><i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+        <div class="main-coln-header">
+            <h2> Download any previous <span class="colorchange">exam paper, notes etc</span>.<br> from here</h2>
+            <ul list style type=none>
+                <li><a href="#" class="btn btn-full">M.Tech</a></li>
+                <li><a href="#" class="btn btn-full">B.Tech</a></li>
+                <li><a href="#" class="btn btn-full">MCA</a></li>
+                <li><a href="#" class="btn btn-full">BCA</a></li>
+                <li><a href="#" class="btn btn-full">B.Pharma</a></li>
+            </ul>
+            
+  <!----------------------------------popup---------------------------------------------->          
+            
+            
+          <div class="popup" id="popup-1">
+   <div class="content">
+    <div class="close-btn" onclick="togglePopup()">
+     ×</div>
+     
+<h1>Sign in</h1> 
+  <div class="input-field"><input placeholder="Email" class="validate"></div>
+  <div class="input-field"><input placeholder="Password" class="validate"></div>
+                                <button class="second-button">SUBMIT</button>
+    <!--<p>Don't have an account? <a href="/signup.html">Sign Up</a></p>-->
+      
+     
+   </div>
+  </div>
+  <button onclick="togglePopup()" class="btn btn-half">UPLOAD FILE</button>
+<script>
+ function togglePopup() {
+ document.getElementById("popup-1")
+  .classList.toggle("active");
+}
+</script>
+
+            
+ <!----------------------------  comment ------------------------------------------------ -->           
+            
+            
+            
+            
+          <!--  <a onclick="pop()" class="btn btn-half">UPLOAD FILE</a>
+            <div id="box">
+                <form><input type="text" id="text">
+                <input type="text" id="text">
+                <input type="text" id="text">
+                </form>
+                <a onclick="pop()" class="close">SUBMIT</a>
+                <button type="button" class="open" data-dismiss="model">&times;</button> 
+            </div>
+            <script type="text/javascript">
+                var c=0;
+                function pop(){
+                    if(c==0){
+                        document.getElementById
+                        ("box").style.display="block";
+                        c=1;
+                    }else{
+                        document.getElementById
+                        ("box").style.display="none";
+                        c=0;
+}
+                }
+            </script>-->
+        </div>
+        </header>
+        <script type="text/javascript">
+            function slideshow(){
+                var x= document.getElementById('check-class');
+                if(x.style.display==="none"){
+                   x.style.display="block"; 
+                }else{
+                    x.style.display="none";
+                }
+            }
+        </script>
+            
+    </body>
+</html>
+            
+                        
+                    
