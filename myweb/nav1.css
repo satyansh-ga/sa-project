@@ -1,0 +1,36 @@
+.paper{
+    height: 700px;
+    width: 500px;
+    right: 50px;
+    left: -250px;
+    bottom: 0px;
+    top: -200px;
+    background: #9DF5FA;
+    position: absolute;
+    bottom: 0px;
+    box-shadow: 2px 4px 9px 2px black; 
+}
+.paper ul{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.paper ul li{
+    margin: 50px;
+    color: black;
+    text-align: justify;
+    list-style: none;
+}
+span{
+    top: 50px;
+    justify-items: center;
+}
+.paper ul li a{
+     position: absolute;
+     margin-top: 25px;
+     color: black;
+     text-decoration: none;
+     margin-left: 20px;     
+}
+.paper ul li a:hover{
+    border-bottom: 1px solid brown;
+}        

@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Flamenco', cursive;
+    font-weight: bold;
+    justify-content: space-evenly;
+   /* background: rgb(219, 218, 218);*/
+   background-color: #0093E9;
+background-image: linear-gradient(-100deg, #0093E9 1%, #80D0C7 100%);
+
+}
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 90px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    margin-left: -80px;
+    border-radius: 100px;
+}
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}.main-nav li{
+   display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: bold; 
+}
+.main-nav li a:hover{
+    border-bottom: 1px solid brown;
+    color: black;
+}
+
+.main-nav li ul li{
+    display: none;
+    margin-bottom: 1px;
+}
+.main-nav li:hover ul li{
+    display: block; 
+}
+
+center{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+   
+}
+.header1{
+    font-size: 90px; 
+}
+.header2{
+    font-size: 30px; 
+}
+
+.icon{
+    display: none;
+}
+@media only screen and (max-width: 1180px){
+    .main-coln-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+/*@media only screen and (max-width: 998px){
+    h1{font-size: 200%;}
+}
+@media only screen and (max-width: 768px)
+{
+    h1{font-size: 180%;}
+    
+    .main-nav{display: none}
+    .icon{
+        display: inline-block;
+        color: azure;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    } 
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+      display: block;
+        margin-top: 10px;
+    }
+    @media only screen and (max-width: 480px)
+        .btn-full{
+            margin-bottom:10px;
+    }
+    h1{font-size: 160%;}
+}*/
+
+
+--------------------------login------------------------

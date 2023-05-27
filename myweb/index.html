@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="nav_button1.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/lib...">
+</head>
+<body>
+    <nav>
+                <div class="row clearflix">
+                    <img src="logo/logo1.jpg" alt="logo" class="logo">
+                    <ul class="main-nav animateslideInUp" id="check-class">
+                        <li><i class="fas fa-home"><a href="courses.html">SUBJECTS</a></i></li>
+                        <li><i class="fas fa-images"></i><a href="#">CONTACT US</a>
+                       </li>
+                        <li><i class="fas fa-info-circle"></i><a href="#">ABOUT</a></li>
+                        <li><i class="fas fa-lock"><a href="#">SIGN OUT</a></i></li>
+                    </ul>
+                    <a href="#" class="icon" 
+                       onclick="slideshow()"><i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+    <center><h1 class="header1">WELCOME</h1>
+        <p class="header2">Here, you can download many courses of previous year's question paper</p>
+       <h1>
+            <a href="https://schoolchlehum.com/" target="_blank">stories of successful students</a>
+        </h1>
+
+    
+    </center>
+  
+   
+    <ul class="nav-area">
+        <li><a href="index.html">home</a></li>
+        <li><a href="courses.html">papers</a></li>
+        <li class="butt"><a href="login1/login.php" style="background: transparent;
+            border: transparent; 
+            font-family: 'Flamenco', cursive; 
+            font-size: 17px; 
+            color: black; 
+            text-transform: uppercase; 
+            top: 50px; ">Login</a></li>
+    </ul>
+    
+    <script type="text/javascript">
+            function slideshow(){
+                var x= document.getElementById('check-class');
+                if(x.style.display==="none"){
+                   x.style.display="block"; 
+                }else{
+                    x.style.display="none";
+                }
+            }
+        </script>
+       
+</body>
+</html> 
