@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Flamenco', cursive;
+}
+ body{
+    background-color: rgb(3, 112, 201);
+    background-image: url(images/sat23.jpg);
+    background-size: 1600px 1500px;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-position: center;
+}
+.heading1{
+    margin: 3px;
+    margin-bottom: -5px;
+    padding-top: 10px;
+    font-family: Times new roman, times , serif;
+     text-decoration: underline;
+     color: rgb(83, 58, 2);
+     font-weight: 800;
+     font-size: 300%;
+}
+h3{
+    margin: 3px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: Times new roman, times , serif;
+    text-decoration: underline; 
+     color: rgb(83, 58, 2);
+     font-weight: 800;
+}
+.navbar{
+background-color: none;
+border-radius: 4px;
+}
+.navbar ul{
+    overflow: auto;
+   
+}
+.navbar li{
+
+list-style: none;
+margin: 5px 10px;
+display: inline-block;
+}
+.navbar li a{
+    margin: 50px 5px;
+    padding: 3px 3px;
+    text-decoration: none;
+    font-size: large;
+    color: #ffffff;
+    font-weight: 800;
+   
+}
+.navbar li a:Hover{
+color: rgb(96, 39, 4);
+ text-decoration: underline;
+ 
+}
+button{
+    background-color: transparent;
+    font-size: large;
+    color: #ffffff;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+}
+.welcome{
+    background-color: none;               
+    font-size: 340%;
+}
+.best{
+    background-color: none;
+    font-size: 150%;
+}
+footer{
+   margin: 200px;
+}

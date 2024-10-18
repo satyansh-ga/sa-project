@@ -1,0 +1,193 @@
+function getComments($conn) {
+    // Fetch all comments
+    $sql = "SELECT comments.*, user.uid FROM comments JOIN user ON comments.userid = user.id";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo "<div class='comment-box'><p>";
+            echo $row['uid'] . "<br>";
+            echo $row['date'] . "<br>";
+            echo $row['message'];
+            echo "</p>";
+
+            if (isset($_SESSION['id']) && $_SESSION['id'] == $row['userid']) {
+                echo "<form class='delete-form' method='POST' action='" . deleteComments($conn) . "'>
+                        <input type='hidden' name='sid' value='" . $row['sid'] . "'>
+                        <button type='submit' name='commentDelete'>Delete</button>
+                      </form>
+                      <form class='edit-form' method='POST' action='editComment.php'>
+                        <input type='hidden' name='sid' value='" . $row['sid'] . "'>
+                        <input type='hidden' name='userid' value='" . $row['userid'] . "'>
+                        <input type='hidden' name='date' value='" . $row['date'] . "'>
+                        <input type='hidden' name='message' value='" . $row['message'] . "'>
+                        <button>Edit</button>
+                      </form>";
+            }
+            echo "</div>";
+        }
+    } else {
+        echo "No comments found.";
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+function getComments($conn){
+    $sql = "SELECT * FROM comments";
+    $result = $conn->query($sql);
+    
+    while($row = $result->fetch_assoc()){
+    $id = $row['userid'];    
+    $sql2 = "SELECT * FROM user WHERE id='$id'";
+    $result2 = $conn->query($sql2);
+        
+        while($row2 = $result2->fetch_assoc()){
+    echo "<div class='comment-box'><p>";
+        echo $row2['uid']."<br>";
+        echo $row['date']."<br>";
+        echo $row['message'];
+    echo "</p> ";
+            if(isset($_SESSION['id'])){
+                if($_SESSION['id'] == $row2['id']){
+
+   echo" <form class='delete-form' method='POST' action='".deleteComments($conn)."'>
+        <input type='hidden' name='sid' value='".$row['sid']."'>
+        <button type='submit' name='commentDelete'>Delete </button>
+    </form>
+    <form class='edit-form' method='POST' action='editComment.php'>
+        <input type='hidden' name='sid' value='".$row['sid']."'>
+        <input type='hidden' name='userid' value='".$row['userid']."'>
+        <input type='hidden' name='date' value='".$row['date']."'>
+        <input type='hidden' name='message' value='".$row['message']."'>
+        <button>Edit</button>
+    </form>";
+      //          }//else{
+                   //  echo" <form class='delete-form' method='POST' action='".deleteComments($conn)."'>
+    //    <input type='hidden' name='sid' value='".$row['sid']."'>
+      //  <button type='submit' name='commentDelete'>Reply </button>
+    //</form>";
+                }
+            }
+    
+   echo" </div>";
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------
+<?php
+  echo  "<form method='POST' action='".getLogin($conn)."'>
+    <input type='text' name='uid'>
+    <input type='password' name='pwd'>
+    <button type='submit' name='loginSubmit'>LOGIN</button>
+    </form>";
+echo  "<form method='POST' action='".userLogout()."'>
+        <button type='submit' name='logoutSubmit'>LOGOUT</button>
+    </form>";
+    
+    if(isset($_SESSION['id'])){
+        echo "You are logged in ";
+    }else{
+        echo "you are LOGGED OUT";
+    }
+    
+        ?>
+-----------------------------------------------------------------------------------------------------------------------------------------------------  
+  <header class="concept-1">                                                        |
+    <div class="nav-logo">                                                          |
+        <h6 class="logo-l0">||Shree||Maa||</h6>                                     |
+        <h1 class="logo-l1">MICROVISION<sup>®</sup></h1>                            |
+        <h2 class="logo-l2">Advanced Technology Institute</h2>                      |
+        </div>                                                                      |
+        <div class="nav-bar">                                                       |
+            <ul>                                                                    |   
+                <li>  <a href="#">HOME</a></li>                                     |
+                <li>   <a href="#">COURSES</a></li>                                 |
+                <li> <a href="indexx.php">REVIEW</a></li>                           |
+                <li> <a href="#">ENROLLMENT</a></li>                                |
+                <li>   <a href="#">LOGIN</a></li>                                   |
+            </ul>                                                                   |
+        </div>                                                                      |
+------------------------------------------------------------------------------------------------------------------------------------------------------
+basic
+Windows 10: Learn how to navigate the operating system, manage files, and use basic applications.
+MS-DOS: Gain a foundational understanding of command-line interface and basic DOS commands.
+MS Office: Master essential tools like Word, Excel, and PowerPoint for document creation, data analysis, and presentations.
+Paint: Explore graphic design basics and create simple images using Paint.
+Internet: Discover the fundamentals of the internet, including browsing, searching, and email.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+CCC
+The CCC course provides a comprehensive introduction to computer basics, covering essential skills and concepts. It typically includes topics such as:
+
+The Course on Computer Concepts (CCC) is a basic IT literacy program that teaches people how to use computers for professional and everyday use. The course covers topics such as: Computer networks, Financial literacy, Internet, and Software and packages. 
+Here are some details about the CCC course: 
+
+Eligibility
+Individuals can appear for the NIELIT CCC Examination through various modes. 
+
+Course delivery
+The course can be taken at institutions authorized by NIELIT or through self-learning.
+
+Examination
+The NIELIT (formerly DOEACC Society) conducts the examination for the certificate course.
+
+Preparation
+To prepare for the CCC exam, individuals can: 
+Meet the experience requirements 
+Train with instructors 
+Test their knowledge 
+Review the study guide and test-taking techniques 
+
+Syllabus
+CCC - Course on Computer Concepts
+
+- Introduction to Computer
+
+- Introduction to Operating System
+
+- Word Processing
+
+- Spread Sheet
+
+- Presentation
+
+- Introduction to Internet and WWW
+
+- E- mail, Social Networking, and e-Governance Services
+
+- Digital Financial Tools and Applications
+
+- Overview of Future skills & Cybersecurity
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Objective of the Course
+The goal of this course is to present overview of IT tools used in day to day use of
+computers and data base operations. The Course has been designed to provide knowledge
+on various hardware and software components of computer, operating system, various
+packages used for different applications, data base concepts & operations and various
+issues related to IT and application of IT.
+At the end of the course the students will be able to:-
+฀ Acquire the foundation level knowledge required to understand computer and its
+operations.
+฀ Understand the hardware and software components of the computer.
+฀ Understand the basic concept of operating system and get knowledge about various
+different operating systems.
+฀ Understand to use the packages of word processing, spread sheet and presentation
+in detail.
+฀ Understand various data base concepts and operations.
+฀ Understand the issues related to IT and IT applications. 
+
+S. No. Topic Minimum number of
+hours
+1. Computer Appreciation 04
+2. Computer Organization 06
+3. Operating System 13
+4. Word Processing 06
+5. Spreadsheet Package 09
+6. Presentation Package 05
+7. Data Base Operations 13
+8. Information Technology and Society 04
+----------------------------------------------------------------------------------------------------------------------------
+C
+
+The C Programming course introduces the learners to C programming language, which is a starting level for getting into programming. 
+It starts from programming basics and gives a holistic view of the C Programming language, detailing all the aspects of the C language from data types, 
+to operators and expressions, to if statements, further to loops, arrays, strings and pointers. 
+The course also provides hands-on training to help you write and test your coding skill, and prepare you for real-life application.

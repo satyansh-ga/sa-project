@@ -1,0 +1,34 @@
+.MyCourses{
+     display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+}
+.co{
+   
+    height: auto;
+    width:250px;
+    margin: 74px;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    background-color: aqua;
+    
+}
+.mo{
+    background-color: white;
+    max-height: 150;
+    max-width: 250;
+    object-fit: cover;
+    
+}
+.mo1{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+}

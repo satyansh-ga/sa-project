@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/sat23.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content-area {
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    border-radius: 20px;
+    font-size: xx-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+.content-area::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255,0.7); /* Translucent background */
+    z-index: -1; /* Place it behind the text */
+
+}
+div p {
+    padding: 10px;
+    padding-top: 60px;
+    font-size: 20px;
+    font-family: times Georgia;
+}
+.concept{
+    background-color: cornsilk;
+    border-radius: 20px;
+}
+
+.content-area2{
+    
+    margin-top: 20px;
+    
+}
+.content1 li{
+    padding-left: 70px;
+    text-decoration: none;
+}
+h1 .heading{
+   padding: 10px;
+   text-align: center;
+    font-size: xx-large;
+     color: #6d019b;
+}
+.content-area2 ul li{
+    margin-bottom: 10px;
+    font-size: large;
+    list-style-type:disc;
+}
+.concept-2{
+    background-color: chocolate;
+    margin-top: 25px;
+   
+}
+.content-area3{
+    text-align: center;
+   background-color: aqua;
+    height: 240px;
+    border-radius: 25px;
+}
+.lis1 li{
+    display: inline-block;
+    list-style: none;
+    font-family: tahoma, geneva, verdana;
+    border-style: solid;
+    border-radius: 20px;
+    width: 252px; 
+    height: 45px;
+    font-size: 35px;
+    margin-left: 77px;
+    margin-top: 10px;
+   
+}
+.lis2 li{
+    display: inline-block;
+    list-style: none;
+    font-family: tahoma, geneva, verdana;
+    border-style: solid;
+    border-radius: 20px;
+    width: 252px; 
+    height: 45px;
+    font-size: 35px;
+    margin-left: 77px;
+    margin-top: 10px;
+}
+.lis3 li{
+     display: inline-block;
+    list-style: none;
+    font-family: tahoma, geneva, verdana;
+    border-style: solid;
+    border-radius: 20px;
+    width: 252px; 
+    height: 45px;
+    font-size: 35px;
+    margin-left: 77px;
+    margin-top: 10px;
+}
+.lis4 li{
+    display: inline-block;
+    list-style: none;
+    font-family: tahoma, geneva, verdana;
+    border-style: solid;
+    border-radius: 20px;
+    width: 252px; 
+    height: 45px;
+    font-size: 35px;
+    margin-left: 77px;
+    margin-top: 10px;
+}

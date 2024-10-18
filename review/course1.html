@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="Style-Course.css">
+    <style>
+        h1, h3 {
+            margin: 3px;
+            padding: 10px;
+            background-color: yellow;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 4px;
+        }
+        .navbar {
+            background-color: #00ffcc;
+            border-radius: 4px;
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+        .navbar li {
+            margin: 5px 10px;
+        }
+        .navbar li a {
+            padding: 3px;
+            text-decoration: none;
+            font-size: large;
+            color: #0a4bc0;
+            font-family: CAMBRIA;
+        }
+        .navbar li a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+        .MyCourses {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+        .MyCourses li {
+            margin: 10px;
+            text-align: center;
+        }
+        .mo img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="concept-1">
+        <center>
+            <h1 class="heading">MICROVISION</h1>
+            <h3>ADVANCE TECHNOLOGY INSTITUTE</h3>
+        </center>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Nav-bar.html">HOME</a></li>
+                <li><a href="Courses.html">COURSES</a></li>
+                <li><a href="login.php">REVIEW</a></li>
+                <li><a href="#">BEST PERFORMERS</a></li>
+                <li><a href="#">ALUMNI</a></li>
+                <li><a href="login.php">LOGIN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+        <ul class="MyCourses">
+            <li class="co 1 1">
+                <a href="#">
+                    <div class="mo">
+                        <img src="images/BASIC.jpg" class="mo1" title="CLICK HERE TO SEE MORE INFO." alt="IMAGE" />
+                    </div>
+                    <br />
+                    <h2>Basic Computer Course</h2>
+                </a>
+                <p>Our comprehensive course covers essential computer skills, including:</p>
+            </li>
+            <li class="co 1 2">
+                <a href="#">
+                    <div class="mo">
+                        <img src="images/CCC1.png" class="mo1" title="CLICK HERE TO SEE MORE INFO." alt="IMAGE" />
+                    </div>
+                    <br />
+                    <h2>Course on Computer Concept</h2>
+                </a>
+                <p>The Course on Computer Concepts (CCC) is a basic IT literacy program that teaches people how to use computers for professional and everyday use. The course covers topics such as: Computer networks, Financial literacy, Internet, and Software and packages.</p>
+            </li>
+            <li class="co 1 3">
+                <a href="#">
+                    <div class="mo">
+                        <img src="images/o%20level.jpeg" class="mo1" title="CLICK HERE TO SEE MORE INFO." alt="IMAGE" />
+                    </div>
+                    <br />
+                    <h2>O Level</h2>
+                </a>
+                <p>The NIELIT O Level course covers essential IT skills and knowledge areas.</p>
+            </li>
+        </ul>
+    </center>
+</body>
+</html>
